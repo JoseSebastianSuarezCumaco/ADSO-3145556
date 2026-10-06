@@ -1,28 +1,28 @@
-# Informe 1 — Commits en el repositorio de documentación y en los repositorios de tu equipo
+# Report 1 — Commits in the documentation repository and in your team's repositories
 
-**Periodo:** del 1 al 30 de septiembre de 2026 (hora Colombia, UTC-5)
-**Repositorio principal de la ficha:** https://github.com/code-sena/ADSO-3145556
+**Period:** September 1 to 30, 2026 (Colombia time, UTC-5)
+**Main repository of the cohort:** https://github.com/code-sena/ADSO-3145556
 
-| Campo | Valor |
+| Field | Value |
 |---|---|
-| Aprendiz | Jose Sebastian Suarez Cumaco |
-| Usuario de GitHub | JoseSebastianSuarezCumaco |
-| Ficha | ADSO-3145556 |
-| Proyecto (equipo) | woman-alert |
-| Prefijo de los repositorios del equipo | wal- |
-| Correo(s) con el que haces commit | masquebugs1@gmail.com |
-| Fecha de elaboración | 6 de octubre de 2026 |
+| Learner | Jose Sebastian Suarez Cumaco |
+| GitHub User | JoseSebastianSuarezCumaco |
+| Cohort | ADSO-3145556 |
+| Project (team) | woman-alert |
+| Team repository prefix | wal- |
+| Email(s) used for commits | masquebugs1@gmail.com |
+| Preparation date | October 6, 2026 |
 
 <details>
-<summary><strong>Instrucciones — léelas y borra este bloque antes de entregar</strong></summary>
+<summary><strong>Instructions — read them and delete this block before submitting</strong></summary>
 
-**Qué reporta este informe.** Todos los commits que hiciste en el repositorio de documentación (`-docs`) y en los demás repositorios de **tu equipo**. Los commits en cualquier otro repositorio (personal, forks, otros equipos) van en el Informe 2.
+**What this report covers.** All commits you made in the documentation repository (`-docs`) and in the other repositories of **your team**. Commits in any other repository (personal, forks, other teams) go in Report 2.
 
-**Importante: los repositorios de equipo se crearon el 25 de agosto de 2026.** Antes de esa fecha no pudiste hacer commits en ellos. Si tu trabajo de la primera y segunda semana de agosto estaba en otro repositorio, va en el Informe 2, no aquí.
+**Important: team repositories were created on August 25, 2026.** Before that date you could not make commits in them. If your work from the first and second weeks of August was in another repository, it goes in Report 2, not here.
 
-**Repositorios de cada equipo** (todos en la organización `code-sena`):
+**Repositories for each team** (todos en la organización `code-sena`):
 
-| Proyecto | Prefijo | Repositorios |
+| Project | Prefix | Repositories |
 |---|---|---|
 | edu-air-control | `ea-control-` | api, db, docs, portal, **worker** |
 | energy-monitor | `en-monitor-` | api, app, db, docs, portal |
@@ -35,13 +35,13 @@
 | woman-alert | `wal-` | api, app, db, docs, portal |
 | your-event | `yev-` | api, app, db, docs, portal |
 
-Si tu equipo usa `worker` en lugar de `app` o `portal`, cambia el nombre del bloque correspondiente (sección 3).
+If your team uses `worker` instead of `app` or `portal`, change the name of the corresponding block (section 3).
 
-**Cómo obtener tus commits.** Para cada repositorio, desde una terminal **Git Bash**, dentro de tu clon del repositorio:
+**How to get your commits.** For each repository, from a **Git Bash** terminal, inside your clone of the repository:
 
 ```bash
-# Ajusta solo estas tres líneas
-AUTOR="tu-correo@ejemplo.com"                 # varios correos: "uno@x.com\|otro@y.com"
+# Adjust only these three lines
+AUTOR="tu-correo@ejemplo.com"                 # multiple emails: "one@x.com\|other@y.com"
 DESDE="2026-08-01T00:00:00-05:00"
 HASTA="2026-08-30T23:59:59-05:00"
 
@@ -52,18 +52,18 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
   --pretty=tformat:"| [%h]($URL/commit/%h) | %ad | %s |" | tee commits.md | wc -l
 ```
 
-- Se imprime **el total de commits**. Las filas ya vienen en formato de tabla y quedan en el archivo `commits.md`: ábrelo, copia las filas y pégalas en la tabla del repositorio. Luego borra `commits.md`.
-- `--all` incluye **todas las ramas**, no solo `main`. Un commit que esté en varias ramas se cuenta una sola vez.
-- `--no-merges` deja por fuera los commits de fusión (*Merge pull request…*).
-- Si el mensaje de un commit contiene el carácter `|`, reemplázalo por `/` para no romper la tabla.
-- Si no tienes el repositorio clonado: `git clone https://github.com/code-sena/PREFIJO-docs`.
-- Si un repositorio no tiene commits tuyos en el periodo, **déjalo en la tabla con 0**; no lo borres.
+- It prints **the total number of commits**. The rows already come in table format and are saved in the `commits.md` file: open it, copy the rows and paste them into the repository table. Then delete `commits.md`.
+- `--all` includes **all branches**, not just `main`. A commit that is in several branches is counted only once.
+- `--no-merges` excludes merge commits (*Merge pull request…*).
+- If a commit message contains the character `|`, replace it with `/` to avoid breaking the table.
+- If you don't have the repository cloned: `git clone https://github.com/code-sena/PREFIX-docs`.
+- If a repository has no commits from you in the period, **leave it in the table with 0**; do not delete it.
 
-**Qué cuenta como commit tuyo.** Solo los hechos con tu cuenta. Abre un commit en GitHub: si aparece tu foto de perfil, está vinculado. Si no aparece, tu correo de `git config user.email` no está vinculado a tu cuenta: anótalo en *Observaciones*, no lo ocultes.
+**What counts as your commit.** Only those made with your account. Open a commit on GitHub: if your profile photo appears, it is linked. If it doesn't appear, your email from `git config user.email` is not linked to your account: note it in *Observations*, do not hide it.
 
 </details>
 
-## 1. Resumen
+## 1. Summary
 
 | Repositorio | Enlace | Commits |
 |---|---|---|
@@ -74,14 +74,14 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 | `wal-portal` | https://github.com/code-sena/wal-portal | 0 |
 | **Total** | | **5** |
 
-## 2. Repositorio de documentación
+## 2. Documentation repository
 
-- **Repositorio:** `wal-docs`
-- **Enlace:** https://github.com/code-sena/wal-docs
-- **Total de commits en el periodo:** 5
-- **Qué hice (2 a 3 líneas):** Actualicé la documentación del proyecto incluyendo contexto, dominio, arquitectura y requisitos. Agregué archivos de las carpetas data y architecture.
+- **Repository:** `wal-docs`
+- **Link:** https://github.com/code-sena/wal-docs
+- **Total commits in the period:** 5
+- **What I did (2 to 3 lines):** Updated project documentation including context, domain, architecture and requirements. Added files from data and architecture folders.
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | [47a931e](https://github.com/code-sena/wal-docs/commit/47a931e) | 2026-09-07 14:33:45 -0500 | Update context and domain documentation |
 | [fbcde77](https://github.com/code-sena/wal-docs/commit/fbcde77) | 2026-09-08 17:29:44 -0500 | docs: I am uploading the file from the data folder, and I am also uploading the files from the architecture folder. |
@@ -89,63 +89,63 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 | [8f4b901](https://github.com/code-sena/wal-docs/commit/8f4b901) | 2026-09-10 00:59:32 -0500 | docs/Architecture update |
 | [a8db933](https://github.com/code-sena/wal-docs/commit/a8db933) | 2026-09-10 15:08:46 -0500 | docs:Architecture folder update |
 
-## 3. Repositorios del equipo
+## 3. Team repositories
 
 ### 3.1 `wal-api`
 
-- **Enlace:** https://github.com/code-sena/wal-api
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):**
+- **Link:** https://github.com/code-sena/wal-api
+- **Total commits in the period:** 0
+- **What I did (2 to 3 lines):**
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | | | |
 
 ### 3.2 `wal-app`
 
-- **Enlace:** https://github.com/code-sena/wal-app
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):**
+- **Link:** https://github.com/code-sena/wal-app
+- **Total commits in the period:** 0
+- **What I did (2 to 3 lines):**
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | | | |
 
 ### 3.3 `wal-db`
 
-- **Enlace:** https://github.com/code-sena/wal-db
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):**
+- **Link:** https://github.com/code-sena/wal-db
+- **Total commits in the period:** 0
+- **What I did (2 to 3 lines):**
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | | | |
 
 ### 3.4 `wal-portal`
 
-- **Enlace:** https://github.com/code-sena/wal-portal
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):**
+- **Link:** https://github.com/code-sena/wal-portal
+- **Total commits in the period:** 0
+- **What I did (2 to 3 lines):**
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | | | |
 
-## 4. Verificación del aprendiz
+## 4. Learner verification
 
-- [ ] Todos los commits listados los hice con mi cuenta (aparece mi foto de perfil en GitHub).
-- [x] Incluí los commits de **todas las ramas**, no solo de `main`.
-- [x] Todos los commits caen entre el 1 y el 30 de septiembre de 2026 (hora Colombia).
-- [x] Cada enlace de commit abre en GitHub.
-- [x] Los repositorios en los que no tengo commits quedaron en la tabla con 0.
-- [x] El total de cada repositorio coincide con el número de filas de su tabla.
+- [ ] All listed commits were made by me with my account (my profile photo appears on GitHub).
+- [x] I included commits from **all branches**, not just `main`.
+- [x] All commits fall between September 1 and 30, 2026 (Colombia time).
+- [x] Each commit link opens on GitHub.
+- [x] Repositories where I have no commits are left in the table with 0.
+- [x] The total of each repository matches the number of rows in its table.
 
-## 5. Observaciones
+## 5. Observations
 
-<!-- Commits sin vincular a tu cuenta, ramas con trabajo sin fusionar, repositorios a los que no tuviste acceso, o cualquier otra aclaración. -->
+<!-- Commits not linked to your account, branches with unmerged work, repositories you didn't have access to, or any other clarification. -->
 
 ---
 
-*Declaro que la información de este informe es veraz y que los commits listados son de mi autoría.*
+*I declare that the information in this report is truthful and that the listed commits are of my authorship.*
 
-**Aprendiz:** Jose Sebastian Suarez Cumaco  **Fecha:** 6 de octubre de 2026
+**Learner:** Jose Sebastian Suarez Cumaco  **Date:** October 6, 2026

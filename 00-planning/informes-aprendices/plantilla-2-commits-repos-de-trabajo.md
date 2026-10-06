@@ -1,42 +1,42 @@
-# Informe 2 — Commits en los repositorios en los que trabajaste
+# Report 2 — Commits in the repositories you worked on
 
-**Periodo:** del 1 al 30 de septiembre de 2026 (hora Colombia, UTC-5)
-**Repositorio principal de la ficha:** https://github.com/code-sena/ADSO-3145556
+**Period:** September 1 to 30, 2026 (Colombia time, UTC-5)
+**Main repository of the cohort:** https://github.com/code-sena/ADSO-3145556
 
-| Campo | Valor |
+| Field | Value |
 |---|---|
-| Aprendiz | Jose Sebastian Suarez Cumaco |
-| Usuario de GitHub | JoseSebastianSuarezCumaco |
-| Ficha | ADSO-3145556 |
-| Proyecto (equipo) | woman-alert |
-| Correo(s) con el que haces commit | masquebugs1@gmail.com |
-| Fecha de elaboración | 6 de octubre de 2026 |
+| Learner | Jose Sebastian Suarez Cumaco |
+| GitHub User | JoseSebastianSuarezCumaco |
+| Cohort | ADSO-3145556 |
+| Project (team) | woman-alert |
+| Email(s) used for commits | masquebugs1@gmail.com |
+| Preparation date | October 6, 2026 |
 
 <details>
-<summary><strong>Instrucciones — léelas y borra este bloque antes de entregar</strong></summary>
+<summary><strong>Instructions — read them and delete this block before submitting</strong></summary>
 
-**Qué reporta este informe.** Todos los commits que hiciste en **los demás repositorios en los que trabajaste**: tu repositorio personal o de perfil, tu fork de `ADSO-3145556`, repositorios de otros equipos, `design-software` y cualquier otro. **No repitas aquí** los repositorios de tu equipo (`-docs`, `-api`, `-app`, `-db`, `-portal`, `-worker`): esos van en el Informe 1.
+**What this report covers.** All commits you made in **the other repositories you worked on**: your personal or profile repository, your fork of `ADSO-3145556`, repositories from other teams, `design-software` and any other. **Do not repeat here** your team's repositories (`-docs`, `-api`, `-app`, `-db`, `-portal`, `-worker`): those go in Report 1.
 
-**Tipos de repositorio** (úsalos en la columna *Tipo*): `Personal` · `Fork de la ficha` · `Otro equipo` · `design-software` · `Otro`.
+**Repository types** (use them in the *Type* column): `Personal` · `Fork of the cohort` · `Other team` · `design-software` · `Other`.
 
-**Paso 1 — descubre en qué repositorios trabajaste.** Elige una de las dos formas (reemplaza `TU_USUARIO`):
+**Step 1 — discover which repositories you worked on.** Choose one of the two methods (replace `YOUR_USER`):
 
-- *Desde el navegador:* abre
-  `https://github.com/search?q=author%3ATU_USUARIO+author-date%3A2026-08-01..2026-08-30&type=commits`
-  y mira en qué repositorios aparecen tus commits.
-- *Desde la terminal* (requiere `gh`, la CLI de GitHub, con sesión iniciada):
+- *From the browser:* open
+  `https://github.com/search?q=author%3AYOUR_USER+author-date%3A2026-08-01..2026-08-30&type=commits`
+  and see in which repositories your commits appear.
+- *From the terminal* (requires `gh`, the GitHub CLI, with active session):
 
 ```bash
 gh search commits --author=TU_USUARIO --author-date=2026-08-01..2026-08-30 --limit 1000 \
   --json repository --jq '.[] | .repository.fullName' | sort | uniq -c
 ```
 
-Te devuelve cada repositorio con el número de commits que encontró.
+It returns each repository with the number of commits it found.
 
-> **Advertencia:** la búsqueda de GitHub solo revisa la **rama por defecto** de cada repositorio. Si trabajaste en otra rama (`dev`, `docs`, `feature/…`), esos commits no aparecen. Por eso el Paso 2 es obligatorio, y además debes acordarte de los repositorios donde trabajaste solo en ramas secundarias.
-> Los commits de los días 1 y 30 pueden cambiar de lado por la zona horaria: verifícalos con el Paso 2.
+> **Warning:** GitHub search only reviews the **default branch** of each repository. If you worked on another branch (`dev`, `docs`, `feature/…`), those commits do not appear. That's why Step 2 is mandatory, and you must also remember the repositories where you worked only on secondary branches.
+> Commits from days 1 and 30 may change sides due to time zone: verify them with Step 2.
 
-**Paso 2 — obtén los commits de cada repositorio.** Para cada repositorio, desde una terminal **Git Bash**, dentro de tu clon:
+**Step 2 — get the commits from each repository.** For each repository, from a **Git Bash** terminal, inside your clone:
 
 ```bash
 # Ajusta solo estas tres líneas
@@ -51,49 +51,49 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
   --pretty=tformat:"| [%h]($URL/commit/%h) | %ad | %s |" | tee commits.md | wc -l
 ```
 
-- Se imprime **el total de commits**. Las filas ya vienen en formato de tabla y quedan en `commits.md`: ábrelo, copia las filas y pégalas en la tabla del repositorio. Luego borra `commits.md`.
-- `--all` incluye **todas las ramas**. Un commit que esté en varias ramas se cuenta una sola vez.
-- `--no-merges` deja por fuera los commits de fusión.
-- Si el mensaje de un commit contiene el carácter `|`, reemplázalo por `/` para no romper la tabla.
-- El enlace de cada commit funciona con el `URL` del repositorio **desde el que clonaste**. Si clonaste un fork, el enlace apunta a tu fork, que es lo correcto.
+- It prints **the total number of commits**. The rows already come in table format and are saved in `commits.md`: open it, copy the rows and paste them into the repository table. Then delete `commits.md`.
+- `--all` includes **all branches**. A commit that is in several branches is counted only once.
+- `--no-merges` excludes merge commits.
+- If a commit message contains the character `|`, replace it with `/` to avoid breaking the table.
+- The link of each commit works with the `URL` of the repository **from which you cloned**. If you cloned a fork, the link points to your fork, which is correct.
 
-**Repositorios privados.** Si un repositorio es privado, indica en *Visibilidad* si el usuario `ariel5253` tiene acceso. Un commit que el instructor no puede abrir no se puede verificar.
+**Private repositories.** If a repository is private, indicate in *Visibility* whether the user `ariel5253` has access. A commit that the instructor cannot open cannot be verified.
 
-**Qué cuenta como commit tuyo.** Solo los hechos con tu cuenta. Abre un commit en GitHub: si aparece tu foto de perfil, está vinculado. Si no aparece, tu correo de `git config user.email` no está vinculado a tu cuenta: anótalo en *Observaciones*, no lo ocultes.
+**What counts as your commit.** Only those made with your account. Open a commit on GitHub: if your profile photo appears, it is linked. If it doesn't appear, your email from `git config user.email` is not linked to your account: note it in *Observations*, do not hide it.
 
-**Copia el bloque de la sección 2 una vez por cada repositorio.** Si en el periodo trabajaste en un solo repositorio, deja un solo bloque.
+**Copy the block from section 2 once for each repository.** If you worked on only one repository in the period, leave a single block.
 
 </details>
 
-## 1. Resumen de repositorios
+## 1. Repository summary
 
-| # | Repositorio | Enlace | Tipo | Visibilidad | Commits |
+| # | Repository | Link | Type | Visibility | Commits |
 |---|---|---|---|---|---|
-| 1 | `JustinDanielaBahamon/AlertaMujer` | https://github.com/JustinDanielaBahamon/AlertaMujer | Personal | Público (ariel5253 tiene acceso) | 20 |
-| 2 | `JustinDanielaBahamon/Backend-ALERTA-MUJER` | https://github.com/JustinDanielaBahamon/Backend-ALERTA-MUJER | Personal | Público (ariel5253 tiene acceso) | 0 |
-| 3 | `JustinDanielaBahamon/Frond-end-Web` | https://github.com/JustinDanielaBahamon/Frond-end-Web | Personal | Público (ariel5253 tiene acceso) | 12 |
+| 1 | `JustinDanielaBahamon/AlertaMujer` | https://github.com/JustinDanielaBahamon/AlertaMujer | Personal | Public (ariel5253 has access) | 20 |
+| 2 | `JustinDanielaBahamon/Backend-ALERTA-MUJER` | https://github.com/JustinDanielaBahamon/Backend-ALERTA-MUJER | Personal | Public (ariel5253 has access) | 0 |
+| 3 | `JustinDanielaBahamon/Frond-end-Web` | https://github.com/JustinDanielaBahamon/Frond-end-Web | Personal | Public (ariel5253 has access) | 12 |
 | | **Total** | | | | **32** |
 
-## 2. Detalle por repositorio
+## 2. Detail by repository
 
 ### 2.1 `JustinDanielaBahamon/AlertaMujer`
 
-- **Enlace del repositorio:** https://github.com/JustinDanielaBahamon/AlertaMujer
+- **Repository link:** https://github.com/JustinDanielaBahamon/AlertaMujer
 - **Tipo:** Personal
-- **Visibilidad:** Público (¿`ariel5253` tiene acceso? Sí)
-- **Total de commits en el periodo:** 20
-- **Qué hice (2 a 3 líneas):** Desarrollé la aplicación móvil de AlertaMujer. Implementé funcionalidades como pantalla de expiración de alerta, integración con API, mapa funcional, persistencia de contactos y mejoras de UI.
+- **Visibility:** Public (Does `ariel5253` have access? Yes)
+- **Total commits in the period:** 20
+- **What I did (2 to 3 lines):** Developed the AlertaMujer mobile application. Implemented features such as alert expiration screen, API integration, functional map, contact persistence and UI improvements.
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | [a3be1239](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/a3be1239) | 2026-08-10 13:34:07 -0500 | The update to the activity diagrams was added |
-| [af2b8ff0](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/af2b8ff0) | 2026-08-21 17:26:23 -0500 | se actualizaron algunos documentos en base al proyecto actual |
-| [b6bdb99b](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/b6bdb99b) | 2026-08-27 16:07:17 -0500 | Actualizacion de informacion |
+| [af2b8ff0](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/af2b8ff0) | 2026-08-21 17:26:23 -0500 | updated some documents based on the current project |
+| [b6bdb99b](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/b6bdb99b) | 2026-08-27 16:07:17 -0500 | Information update |
 | [d093e4fe](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/d093e4fe) | 2026-09-03 12:42:28 -0500 | update srs |
 | [3c9f4091](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/3c9f4091) | 2026-09-04 17:37:18 -0500 | feat:A screen was added for when the alert timer expires. |
 | [a5548853](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/a5548853) | 2026-09-04 17:37:18 -0500 | feat:A screen was added for when the alert timer expires. |
-| [7fde9bcb](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/7fde9bcb) | 2026-09-07 17:16:16 -0500 | develop fixed whit the section save ubication |
-| [f2548779](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/f2548779) | 2026-09-07 17:16:16 -0500 | develop fixed whit the section save ubication |
+| [7fde9bcb](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/7fde9bcb) | 2026-09-07 17:16:16 -0500 | develop fixed with the section save location |
+| [f2548779](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/f2548779) | 2026-09-07 17:16:16 -0500 | develop fixed with the section save location |
 | [b548a5c9](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/b548a5c9) | 2026-09-16 17:09:09 -0500 | Test with the API |
 | [40f8709c](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/40f8709c) | 2026-09-16 17:09:09 -0500 | Test with the API |
 | [094319d6](https://github.com/JustinDanielaBahamon/AlertaMujer/commit/094319d6) | 2026-09-17 17:30:02 -0500 | API functionality test 2 |
@@ -109,25 +109,25 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 
 ### 2.2 `JustinDanielaBahamon/Backend-ALERTA-MUJER`
 
-- **Enlace del repositorio:** https://github.com/JustinDanielaBahamon/Backend-ALERTA-MUJER
+- **Repository link:** https://github.com/JustinDanielaBahamon/Backend-ALERTA-MUJER
 - **Tipo:** Personal
-- **Visibilidad:** Público (¿`ariel5253` tiene acceso? Sí)
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):** No hice commits en este repositorio durante el periodo de septiembre.
+- **Visibility:** Public (Does `ariel5253` have access? Yes)
+- **Total commits in the period:** 0
+- **What I did (2 to 3 lines):** I did not make commits in this repository during the September period.
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | | | |
 
 ### 2.3 `JustinDanielaBahamon/Frond-end-Web`
 
-- **Enlace del repositorio:** https://github.com/JustinDanielaBahamon/Frond-end-Web
+- **Repository link:** https://github.com/JustinDanielaBahamon/Frond-end-Web
 - **Tipo:** Personal
-- **Visibilidad:** Público (¿`ariel5253` tiene acceso? Sí)
-- **Total de commits en el periodo:** 12
-- **Qué hice (2 a 3 líneas):** Desarrollé el frontend web administrativo de AlertaMujer. Implementé funcionalidades de gestión de zonas, usuarios, dispositivos, moderadores, evidencias y reportes. Agregé modo oscuro, soporte multiidioma y mejoras de responsividad.
+- **Visibility:** Public (Does `ariel5253` have access? Yes)
+- **Total commits in the period:** 12
+- **What I did (2 to 3 lines):** Developed the AlertaMujer administrative web frontend. Implemented zone, user, device, moderator, evidence and report management features. Added dark mode, multi-language support and responsiveness improvements.
 
-| Commit ID | Fecha y hora | Mensaje |
+| Commit ID | Date and time | Message |
 |---|---|---|
 | [5736d79](https://github.com/JustinDanielaBahamon/Frond-end-Web/commit/5736d79) | 2026-09-16 17:13:27 -0500 | Test with the API |
 | [69ade03](https://github.com/JustinDanielaBahamon/Frond-end-Web/commit/69ade03) | 2026-09-17 17:30:36 -0500 | API functionality test 2 |
@@ -142,22 +142,22 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 | [d5e5a0e](https://github.com/JustinDanielaBahamon/Frond-end-Web/commit/d5e5a0e) | 2026-09-30 19:07:33 -0500 | feat: add French and Portuguese languages, improve light mode line contrast and make topbar and buttons responsive |
 | [568d1ad](https://github.com/JustinDanielaBahamon/Frond-end-Web/commit/568d1ad) | 2026-09-30 20:08:03 -0500 | fix(reports): fix New Report modal and add label to primary button |
 
-## 3. Verificación del aprendiz
+## 3. Learner verification
 
-- [ ] Todos los commits listados los hice con mi cuenta (aparece mi foto de perfil en GitHub).
-- [x] Incluí los commits de **todas las ramas** de cada repositorio, no solo de la rama por defecto.
-- [x] Todos los commits caen entre el 1 y el 30 de septiembre de 2026 (hora Colombia).
-- [x] No repetí repositorios del Informe 1 (los de mi equipo).
-- [x] Cada enlace de repositorio y de commit abre en GitHub.
-- [x] El total de cada repositorio coincide con el número de filas de su tabla.
-- [x] En los repositorios privados indiqué si el instructor tiene acceso.
+- [ ] All listed commits were made by me with my account (my profile photo appears on GitHub).
+- [x] I included commits from **all branches** of each repository, not just the default branch.
+- [x] All commits fall between September 1 and 30, 2026 (Colombia time).
+- [x] I did not repeat repositories from Report 1 (my team's repositories).
+- [x] Each repository and commit link opens on GitHub.
+- [x] The total of each repository matches the number of rows in its table.
+- [x] For private repositories I indicated whether the instructor has access.
 
-## 4. Observaciones
+## 4. Observations
 
-Los commits listados en los repositorios AlertaMujer y Frond-end-Web aparecen con el usuario `JustinDanielaBahamon` en lugar de mi usuario `JoseSebastianSuarezCumaco`. Esto ocurre porque mi correo de git (masquebugs1@gmail.com) no está vinculado a mi cuenta de GitHub. Sin embargo, estos commits son de mi autoría y fueron hechos por mí durante el desarrollo del proyecto.
+The commits listed in the AlertaMujer and Frond-end-Web repositories appear with the user `JustinDanielaBahamon` instead of my user `JoseSebastianSuarezCumaco`. This happens because my git email (masquebugs1@gmail.com) is not linked to my GitHub account. However, these commits are of my authorship and were made by me during the project development.
 
 ---
 
-*Declaro que la información de este informe es veraz y que los commits listados son de mi autoría.*
+*I declare that the information in this report is truthful and that the listed commits are of my authorship.*
 
-**Aprendiz:** Jose Sebastian Suarez Cumaco  **Fecha:** 6 de octubre de 2026
+**Learner:** Jose Sebastian Suarez Cumaco  **Date:** October 6, 2026
