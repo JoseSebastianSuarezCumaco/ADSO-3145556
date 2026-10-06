@@ -1,17 +1,17 @@
 # Informe 1 — Commits en el repositorio de documentación y en los repositorios de tu equipo
 
-**Periodo:** del 1 al 30 de agosto de 2026 (hora Colombia, UTC-5)
+**Periodo:** del 1 al 30 de septiembre de 2026 (hora Colombia, UTC-5)
 **Repositorio principal de la ficha:** https://github.com/code-sena/ADSO-3145556
 
 | Campo | Valor |
 |---|---|
-| Aprendiz | |
-| Usuario de GitHub | |
+| Aprendiz | Jose Sebastian Suarez Cumaco |
+| Usuario de GitHub | JoseSebastianSuarezCumaco |
 | Ficha | ADSO-3145556 |
-| Proyecto (equipo) | |
-| Prefijo de los repositorios del equipo | |
-| Correo(s) con el que haces commit | |
-| Fecha de elaboración | |
+| Proyecto (equipo) | woman-alert |
+| Prefijo de los repositorios del equipo | wal- |
+| Correo(s) con el que haces commit | masquebugs1@gmail.com |
+| Fecha de elaboración | 6 de octubre de 2026 |
 
 <details>
 <summary><strong>Instrucciones — léelas y borra este bloque antes de entregar</strong></summary>
@@ -67,29 +67,33 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 
 | Repositorio | Enlace | Commits |
 |---|---|---|
-| `{PREFIJO}-docs` | https://github.com/code-sena/{PREFIJO}-docs | 0 |
-| `{PREFIJO}-api` | https://github.com/code-sena/{PREFIJO}-api | 0 |
-| `{PREFIJO}-app` | https://github.com/code-sena/{PREFIJO}-app | 0 |
-| `{PREFIJO}-db` | https://github.com/code-sena/{PREFIJO}-db | 0 |
-| `{PREFIJO}-portal` | https://github.com/code-sena/{PREFIJO}-portal | 0 |
-| **Total** | | **0** |
+| `wal-docs` | https://github.com/code-sena/wal-docs | 5 |
+| `wal-api` | https://github.com/code-sena/wal-api | 0 |
+| `wal-app` | https://github.com/code-sena/wal-app | 0 |
+| `wal-db` | https://github.com/code-sena/wal-db | 0 |
+| `wal-portal` | https://github.com/code-sena/wal-portal | 0 |
+| **Total** | | **5** |
 
 ## 2. Repositorio de documentación
 
-- **Repositorio:** `{PREFIJO}-docs`
-- **Enlace:** https://github.com/code-sena/{PREFIJO}-docs
-- **Total de commits en el periodo:** 0
-- **Qué hice (2 a 3 líneas):**
+- **Repositorio:** `wal-docs`
+- **Enlace:** https://github.com/code-sena/wal-docs
+- **Total de commits en el periodo:** 5
+- **Qué hice (2 a 3 líneas):** Actualicé la documentación del proyecto incluyendo contexto, dominio, arquitectura y requisitos. Agregué archivos de las carpetas data y architecture.
 
 | Commit ID | Fecha y hora | Mensaje |
 |---|---|---|
-| | | |
+| [47a931e](https://github.com/code-sena/wal-docs/commit/47a931e) | 2026-09-07 14:33:45 -0500 | Update context and domain documentation |
+| [fbcde77](https://github.com/code-sena/wal-docs/commit/fbcde77) | 2026-09-08 17:29:44 -0500 | docs: I am uploading the file from the data folder, and I am also uploading the files from the architecture folder. |
+| [3f1dae2](https://github.com/code-sena/wal-docs/commit/3f1dae2) | 2026-09-09 21:34:34 -0500 | docs: updating the requirements |
+| [8f4b901](https://github.com/code-sena/wal-docs/commit/8f4b901) | 2026-09-10 00:59:32 -0500 | docs/Architecture update |
+| [a8db933](https://github.com/code-sena/wal-docs/commit/a8db933) | 2026-09-10 15:08:46 -0500 | docs:Architecture folder update |
 
 ## 3. Repositorios del equipo
 
-### 3.1 `{PREFIJO}-api`
+### 3.1 `wal-api`
 
-- **Enlace:** https://github.com/code-sena/{PREFIJO}-api
+- **Enlace:** https://github.com/code-sena/wal-api
 - **Total de commits en el periodo:** 0
 - **Qué hice (2 a 3 líneas):**
 
@@ -97,9 +101,9 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 |---|---|---|
 | | | |
 
-### 3.2 `{PREFIJO}-app`
+### 3.2 `wal-app`
 
-- **Enlace:** https://github.com/code-sena/{PREFIJO}-app
+- **Enlace:** https://github.com/code-sena/wal-app
 - **Total de commits en el periodo:** 0
 - **Qué hice (2 a 3 líneas):**
 
@@ -107,9 +111,9 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 |---|---|---|
 | | | |
 
-### 3.3 `{PREFIJO}-db`
+### 3.3 `wal-db`
 
-- **Enlace:** https://github.com/code-sena/{PREFIJO}-db
+- **Enlace:** https://github.com/code-sena/wal-db
 - **Total de commits en el periodo:** 0
 - **Qué hice (2 a 3 líneas):**
 
@@ -117,9 +121,9 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 |---|---|---|
 | | | |
 
-### 3.4 `{PREFIJO}-portal`
+### 3.4 `wal-portal`
 
-- **Enlace:** https://github.com/code-sena/{PREFIJO}-portal
+- **Enlace:** https://github.com/code-sena/wal-portal
 - **Total de commits en el periodo:** 0
 - **Qué hice (2 a 3 líneas):**
 
@@ -130,11 +134,11 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 ## 4. Verificación del aprendiz
 
 - [ ] Todos los commits listados los hice con mi cuenta (aparece mi foto de perfil en GitHub).
-- [ ] Incluí los commits de **todas las ramas**, no solo de `main`.
-- [ ] Todos los commits caen entre el 1 y el 30 de agosto de 2026 (hora Colombia).
-- [ ] Cada enlace de commit abre en GitHub.
-- [ ] Los repositorios en los que no tengo commits quedaron en la tabla con 0.
-- [ ] El total de cada repositorio coincide con el número de filas de su tabla.
+- [x] Incluí los commits de **todas las ramas**, no solo de `main`.
+- [x] Todos los commits caen entre el 1 y el 30 de septiembre de 2026 (hora Colombia).
+- [x] Cada enlace de commit abre en GitHub.
+- [x] Los repositorios en los que no tengo commits quedaron en la tabla con 0.
+- [x] El total de cada repositorio coincide con el número de filas de su tabla.
 
 ## 5. Observaciones
 
@@ -144,4 +148,4 @@ git log --all --no-merges --author="$AUTOR" --since="$DESDE" --until="$HASTA" \
 
 *Declaro que la información de este informe es veraz y que los commits listados son de mi autoría.*
 
-**Aprendiz:** ______________________  **Fecha:** ______________
+**Aprendiz:** Jose Sebastian Suarez Cumaco  **Fecha:** 6 de octubre de 2026
